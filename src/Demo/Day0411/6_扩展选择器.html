@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        /*子选择器*/
+        div p{
+            color:red;
+        }
+        /*父选择器*/
+        div>p{
+            border: 1px solid;
+        }
+        /*并集选择器*/
+        div,p{
+            color: cornflowerblue;
+        }
+        /*属性选择器*/
+        input[type='text']{
+            border: 5px solid;
+        }
+        /*伪类选择器：选择一些具有的状态*/
+        a:link{
+            color: pink;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p>苹果木瓜汁</p>
+</div>
+<p>芒果凤梨汁</p>
+<div>胡萝卜汁</div>
+
+<input type="text">
+<input type="password">
+<br>
+
+<a href="#">java后台开发</a>
+</body>
+</html>
