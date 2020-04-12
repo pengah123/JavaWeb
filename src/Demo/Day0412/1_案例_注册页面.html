@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: url("../images/register_bg.png") no-repeat center;
+        }
+
+        #divmu {
+            background-color: white;
+            border: #EEEEEE 8px solid;
+            width: 900px;
+            height: 500px;
+            align: center;
+            padding-top: 20px ;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        #div1 {
+
+            float: left;
+            margin: 15px;
+        }
+        #div1 p:first-child{
+            color: coral;
+            font-size: 20px;
+        }
+        #div1 p:last-child{
+            color: gray;
+            font-size: 20px;
+        }
+
+        #div2 {
+            float: left;
+
+            width: 450px;
+
+        }
+
+        #div3 {
+
+            float: right;
+            margin: 10px;
+        }
+        #div3 p{
+            font-size: 10px;
+        }
+        #div3 p a{
+            color: pink;
+        }
+
+
+        .td_left{
+            width: 100px;
+            height: 45px;
+            text-align: right;
+        }
+        .td_right{
+            padding-left: 50px;
+        }
+        #username,#password,#email,#name,#tel,#birth,#validate{
+            width: 80%;
+            height: 32px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding-left: 8px;
+            margin: 5px;
+
+        }
+        #validate{
+            width: 110px;
+        }
+        #validateimage{
+            height: 32px;
+            vertical-align: middle;
+        }
+        #register{
+            width: 150px;
+            height: 40px;
+            background-color: salmon;
+            border: 1px solid salmon;
+            horiz-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="divmu">
+    <div id="div1">
+        <p>新用户注册 </p>
+        <p>USER REGISTER</p>
+    </div>
+
+    <div id="div2">
+        <div class="form">
+            <form action="#">
+                <table align="center" width="500">
+                    <tr>
+                        <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入账号"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">密码</td>
+                        <td class="td_right"><input type="password" placeholder="请输入密码" id="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">Email</td>
+                        <td class="td_right"><input type="email" placeholder="请输入Email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">姓名</td>
+                        <td class="td_right"><input type="text" placeholder="请输入真实姓名" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">手机号</td>
+                        <td class="td_right"><input type="tel" placeholder="请输入你的手机号" id="tel" name="tel"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户名</td>
+                        <td class="td_right"><input id="gender" type="radio" name="gender" value="male">男
+                            <input id="gender" type="radio" name="gender" value="female">女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">出生日期</td>
+                        <td class="td_right"><input id="birth" type="date" name="birth"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">验证码</td>
+                        <td class="td_right">
+                            <input type="text" id="validate" name="validate">
+                            <input type="image" id="validateimage" src="../images/verify_code.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit"  id="register" value="注册">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="div3">
+        <p>已有账号？<a href="#">立即登陆</a></p>
+
+    </div>
+</div>
+</body>
+</html>

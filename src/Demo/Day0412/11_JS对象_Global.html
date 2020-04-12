@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global对象</title>
+</head>
+<body>
+<script>
+    /*encode*/
+    var str = "http://黑马程序员";
+    var encode = encodeURI(str);
+    document.write(encode + "<br>");
+    var s = decodeURI(encode);
+    document.write(s + "<br>")
+
+    /*encodeconponent*/
+    var str = "http://黑马程序员";
+    var encode = encodeURIComponent(str);
+    document.write(encode + "<br>");
+    var s = decodeURIComponent(encode);
+    document.write(s + "<br>")
+    /*parseint,转为数字*/
+    var str = "123abc";
+    var num = parseInt(str);
+    document.write((num + 1) + "<br>");
+
+    /*isNAN，判断是否为NAN,不能通过==符号判断是否为NaN*/
+    var a = "abc";
+    document.write(isNaN(a) + "<br>");
+    /*eval,将字符串转为javascript脚本执行*/
+    var jscode = "alert(123)";
+    // document.write(jscode + "<br>");
+    eval(jscode);
+</script>
+</body>
+</html>

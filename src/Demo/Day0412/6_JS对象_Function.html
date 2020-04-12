@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<script>
+    /*创建*/
+    var fun=new Function("a","b","alert(a);");
+    fun(3,4);
+
+    function func2(a,b) {
+        alert(a+b);
+    }
+    func2(3,4);
+
+    var func3=function(a,b){
+        alert(a-b);
+    }
+    func3(3,4);
+
+</script>
+</body>
+</html>

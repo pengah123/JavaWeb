@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp对象</title>
+
+    <script>
+        /*创建*/
+        var reg = new RegExp("^\\w{6,12}$");
+        var reg2 = /^\w{6,12}$/;
+        // alert(reg);
+        // alert(reg2);
+
+        /*方法*/
+        var name="zhangsanhugrtfg"
+        var flag=reg.test(name);
+        alert(flag);
+    </script>
+</head>
+<body>
+<!--
+[]单个字符
+？ 0次或一次
+* 0次或多次
++ 1次或多次
+\d 单个数字
+\w 单个单词字符
+{m,n}表示：m<= 数量 <=n-->
+</body>
+</html>
