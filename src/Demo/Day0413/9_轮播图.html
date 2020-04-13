@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<img id="img" src="../images/banner_1.jpg" alt="" width="100%">
+<br>
+<input type="button" id="forward" value="前进">
+<input type="button" id="back" value="后退">
+
+<script>
+    /*
+    分析：
+    1.页面上展示image
+    2.定义一个方法修改图片
+    3.定义一个计时器，每隔一段时间调用一下这个方法
+     */
+    var number=1;
+    function fun(){
+        number++;
+        var img=document.getElementById("img");
+        img.src="../images/banner_"+(number%3+1)+".jpg";
+    }
+    setInterval(fun,3000);
+    //前进
+    var forward=document.getElementById("forward");
+    forward.onclick=function(){
+        history.forward();
+    }
+    //    后退
+    var back=document.getElementById("back");
+    back.onclick=function(){
+        history.back();
+    }
+</script>
+</body>
+</html>

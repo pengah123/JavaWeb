@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history对象</title>
+    <!--方法：back,forward,go(参数表示：负数表示后退几步，正数表示前进几步)-->
+</head>
+<body>
+<input type="button" id="butn" value="获取历史记录的个数">
+<br>
+<a href="9_轮播图.html">轮播图页面</a>
+<br>
+<input type="button" id="forward" value="前进">
+<input type="button" id="back" value="后退">
+<script>
+    //获取历史记录的个数
+    var butn=document.getElementById("butn");
+    butn.onclick=function(){
+        var len=history.length;
+        alert(len);
+    }
+    //前进
+    var forward=document.getElementById("forward");
+    forward.onclick=function(){
+        history.forward();
+    }
+//    后退
+    var back=document.getElementById("back");
+    back.onclick=function(){
+        history.back();
+    }
+
+</script>
+</body>
+</html>

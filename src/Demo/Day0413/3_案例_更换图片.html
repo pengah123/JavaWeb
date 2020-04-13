@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例</title>
+</head>
+<body>
+<img  id="image1" src="../images/jiangxuan_1.jpg" alt="">
+<script>
+    var image=document.getElementById("image1");
+    var flag=false;
+    image.onclick=function(){
+        if(flag){
+            image.src="../images/jiangxuan_1.jpg";
+            flag=false;
+        }else{
+            image.src="../images/jiangxuan_2.jpg";
+            flag=true;
+        }
+    }
+</script>
+</body>
+</html>

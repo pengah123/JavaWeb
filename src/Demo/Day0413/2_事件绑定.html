@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+
+</head>
+<body>
+<img  id="image1" src="../images/jiangxuan_1.jpg" alt="" onclick="func();">
+
+<img  id="image2" src="../images/jiangxuan_2.jpg" alt="">
+
+<script>
+    function func(){
+        alert("我被点了");
+    }
+    function func2(){
+        alert("咋老点我");
+    }
+    var image2 = document.getElementById("image2");
+    image2.onclick=func2;
+</script>
+
+</body>
+</html>

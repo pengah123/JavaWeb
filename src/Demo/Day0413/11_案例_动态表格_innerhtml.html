@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            align: center;
+        }
+
+        #div1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #div2 {
+
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        #username, #userid, #userssex {
+            width: 200px;
+        }
+
+        #head {
+            font-weight: bold;
+
+        }
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <input type="text" id="userid" placeholder="请输入编号">
+    <input type="text" id="username" placeholder="请输入姓名">
+    <input type="text" id="usersex" placeholder="请输入性别">
+    <input type="button" id="add" value="添加">
+</div>
+<div id="div2">
+    <p>学生信息表</p>
+    <table border="1px solid" width="80%" align="center">
+        <tr id="head">
+            <td>编号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>令狐冲</td>
+            <td>男</td>
+            <td><a id="del1" href="javascript:void(0)" onclick="deltr(this)">删除</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>任我行</td>
+            <td>男</td>
+            <td><a id="del2" href="javascript:void(0)" onclick="deltr(this)">删除</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>岳不群</td>
+            <td>？</td>
+            <td><a id="del3" href="javascript:void(0)" onclick="deltr(this)">删除</a></td>
+        </tr>
+    </table>
+
+    <script>
+        //添加操作
+        var add=document.getElementById("add");
+        add.onclick=function () {
+            var userid=document.getElementById("userid").value;
+            var username=document.getElementById("username").value;
+            var usersex=document.getElementById("usersex").value;
+
+            var table=document.getElementsByTagName("table")[0];
+            table.innerHTML+="        <tr>\n" +
+                "            <td>"+userid+"</td>\n" +
+                "            <td>"+username+"</td>\n" +
+                "            <td>"+usersex+"</td>\n" +
+                "            <td><a id=\"del2\" href=\"javascript:void(0)\" onclick=\"deltr(this)\">删除</a></td>\n" +
+                "        </tr>";
+        }
+        //删除操作
+    function deltr(obj){
+            var table=obj.parentNode.parentNode.parentNode;
+            var tr=obj.parentNode.parentNode;
+            table.removeChild(tr);
+        }
+    </script>
+</div>
+</body>
+</html>

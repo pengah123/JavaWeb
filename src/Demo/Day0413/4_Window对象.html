@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window窗口对象</title>
+
+    <!--alert,confirm,prompt方法-->
+
+    <!--<script>
+    //alert 方法
+    window.alert("hellow a");
+
+    //confirm方法，返回true or false
+    // window.confirm("确定退出吗？");
+    var flag=confirm("确定要退出吗？");
+    if(flag){
+        alert("拜拜")
+    }else{
+        alert("点错了，手别抖")
+    }
+
+    //promt方法,返回输入的值
+     var result=prompt("请输入用户名");
+    alert(result);
+
+</script>-->
+</head>
+<body>
+
+<!--open，close对象-->
+
+<!--<input id="openbdn" type="button" value="打开窗口">
+<input id="closebdn" type="button" value="关闭窗口">
+
+<script>
+    var button = document.getElementById("openbdn");
+    var newwindow;
+    button.onclick=function(){
+        //open返回一个新的window对象
+        newwindow =open("https://www.baidu.com");
+    };
+    var closebutton = document.getElementById("closebdn");
+    closebutton.onclick=function(){
+        //close关闭调用他的window对象
+        newwindow.close();
+    }
+</script>-->
+
+<!--定时器
+一次性定时器：setTimeout
+循环定时器：setInterval
+取消计时器：clearTimeout,clearInterval-->
+<!--<script>
+
+    // setTimeout("alert('Boom~~')",3000);
+   var timeout = setTimeout(func,3000);
+   clearTimeout(timeout);
+   function func() {
+       alert('Boom~~');
+   }
+   // setInterval(func,2000);
+</script>-->
+
+<!--history对象-->
+<script>
+    var h1=history;
+    var h2=window.history;
+    alert(h1);
+    alert(h2);
+</script>
+
+
+</body>
+</html>

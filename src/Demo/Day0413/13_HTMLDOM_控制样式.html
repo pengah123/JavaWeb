@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制样式</title>
+</head>
+<body>
+<div id="div1">
+    div1
+</div>
+
+<script>
+    var div1=document.getElementById("div1");
+    div1.onclick=function(){
+        div1.style.border="solid 1px";
+        div1.style.width="200px";
+    //    font-size属性应写成fontSize
+        div1.style.fontSize="20px";
+    }
+    //提前定义好一个类的格式，然后直接将对象的属性增加一个class
+    div1.className="d1";
+
+</script>
+</body>
+</html>
