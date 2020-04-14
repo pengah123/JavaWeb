@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单的验证</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("../images/register_bg.png") no-repeat center;
+        }
+
+        #divmu {
+            background-color: white;
+            border: #EEEEEE 8px solid;
+            width: 1000px;
+            height: 500px;
+            align: center;
+            padding-top: 20px;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        #div1 {
+
+            float: left;
+            margin: 15px;
+        }
+
+        #div1 p:first-child {
+            color: coral;
+            font-size: 20px;
+        }
+
+        #div1 p:last-child {
+            color: gray;
+            font-size: 20px;
+        }
+
+        #div2 {
+            float: left;
+
+            width: 450px;
+
+        }
+
+        #div3 {
+
+            float: right;
+            margin: 10px;
+        }
+
+        #div3 p {
+            font-size: 10px;
+        }
+
+        #div3 p a {
+            color: pink;
+        }
+
+
+        .td_left {
+            width: 100px;
+            height: 45px;
+            text-align: right;
+        }
+
+        .td_right {
+            padding-left: 50px;
+        }
+
+        #username, #password, #email, #name, #tel, #birth, #validate {
+            width: 250px;
+            height: 32px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding-left: 8px;
+            margin: 5px;
+
+        }
+
+        #validate {
+            width: 110px;
+        }
+
+        #validateimage {
+            height: 32px;
+            vertical-align: middle;
+        }
+
+        #btn_sub {
+            width: 150px;
+            height: 40px;
+            background-color: salmon;
+            border: 1px solid salmon;
+        }
+
+        #register {
+
+            padding-left: 200px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.getElementById("form").onsubmit = function () {
+                return checkUsername() && checkPassword()&&checkEmail()&&checkName()&&checkTel();
+
+            }
+            document.getElementById("username").onblur = checkUsername;
+            document.getElementById("password").onblur = checkPassword;
+            document.getElementById("email").onblur = checkEmail;
+            document.getElementById("name").onblur = checkName;
+            document.getElementById("tel").onblur = checkTel;
+        }
+
+        function checkUsername() {
+            var username = document.getElementById("username").value;
+            var reg_username = /^\w{6,12}$/;
+            var flag = reg_username.test(username);
+            var s_username = document.getElementById("s_username");
+            if (flag) {
+                s_username.innerHTML = "<img width='35' height='25' src=\"../images/collection_icon.jpg\" alt=\"\">";
+            } else {
+                s_username.innerHTML = "用户名格式错误";
+                s_username.className = "error";
+            }
+            return flag;
+        }
+
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var reg_password = /^\w{6,12}$/;
+            var flag = reg_password.test(password);
+            var s_password = document.getElementById("s_password");
+            if (flag) {
+                s_password.innerHTML = "<img width='35' height='25' src=\"../images/collection_icon.jpg\" alt=\"\">";
+            } else {
+                s_password.innerHTML = "密码格式错误";
+                s_password.className = "error";
+            }
+            return flag;
+        }        
+        function checkEmail() {
+            var email = document.getElementById("email").value;
+            var reg_email = /^[a-zA-Z\d]+([-_\.][a-zA-Z\d]+)*@[a-zA-Z\d]+\.[a-zA-Z\d]{2,4}$/;
+            var flag = reg_email.test(email);
+            var s_email = document.getElementById("s_email");
+            if (flag) {
+                s_email.innerHTML = "<img width='35' height='25' src=\"../images/collection_icon.jpg\" alt=\"\">";
+            } else {
+                s_email.innerHTML = "邮箱格式错误";
+                s_email.className = "error";
+            }
+            return flag;
+        }          
+        function checkName() {
+            var name = document.getElementById("name").value;
+            var reg_name =/^\w{2,5}$/;
+            var flag = reg_name.test(name);
+            var s_name = document.getElementById("s_name");
+            if (flag) {
+                s_name.innerHTML = "<img width='35' height='25' src=\"../images/collection_icon.jpg\" alt=\"\">";
+            } else {
+                s_name.innerHTML = "姓名格式错误";
+                s_name.className = "error";
+            }
+            return flag;
+        }        
+        function checkTel() {
+            var tel = document.getElementById("tel").value;
+            var reg_tel = /^\d{11}$/;
+            var flag = reg_tel.test(tel);
+            var s_tel = document.getElementById("s_tel");
+            if (flag) {
+                s_tel.innerHTML = "<img width='35' height='25' src=\"../images/collection_icon.jpg\" alt=\"\">";
+            } else {
+                s_tel.innerHTML = "手机号格式错误";
+                s_tel.className = "error";
+            }
+            return flag;
+        }
+
+    </script>
+</head>
+<body>
+<div id="divmu">
+    <div id="div1">
+        <p>新用户注册 </p>
+        <p>USER REGISTER</p>
+    </div>
+
+    <div id="div2">
+        <div class="form">
+            <form action="#" id="form" method="get">
+                <table align="center" width="700">
+                    <tr>
+                        <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入账号"><span
+                                id="s_username"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td class="td_left">密码</td>
+                        <td class="td_right"><input type="password" placeholder="请输入密码" id="password" name="password">
+                            <span id="s_password"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td_left">Email</td>
+                        <td class="td_right"><input type="email" placeholder="请输入Email" id="email" name="email">
+                            <span id="s_email"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">姓名</td>
+                        <td class="td_right"><input type="text" placeholder="请输入真实姓名" id="name" name="name">
+                            <span id="s_name"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">手机号</td>
+                        <td class="td_right"><input type="tel" placeholder="请输入你的手机号" id="tel" name="tel">
+                            <span id="s_tel"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td_left">性别</td>
+                        <td class="td_right"><input id="gender" type="radio" name="gender" value="male" checked>男
+                            <input id="gender" type="radio" name="gender" value="female">女
+                            <span id="s_gender"></span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">出生日期</td>
+                        <td class="td_right"><input id="birth" type="date" name="birth">
+                            <span id="s_birth"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">验证码</td>
+                        <td class="td_right">
+                            <input type="text" id="validate" name="validate">
+                            <input type="image" id="validateimage" src="../images/verify_code.jpg">
+                            <span id="s_validate"></span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="register">
+                            <input type="submit" id="btn_sub" value="注册">
+                            <span id="s_register"></span>
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="div3">
+        <p>已有账号？<a href="#">立即登陆</a></p>
+
+    </div>
+</div>
+</body>
+</html>
