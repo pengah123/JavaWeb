@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK" ?>
+<students>
+    <student number="001">
+        <name id="cast">张三</name>
+        <age>23</age>
+        <gender>男</gender>
+    </student>
+    <student number="002">
+        <name>李四</name>
+        <age>23</age>
+        <gender>男</gender>
+    </student>
+    <student number="003">
+        <name>王五</name>
+        <age>23</age>
+        <gender>男</gender>
+    </student>
+</students>

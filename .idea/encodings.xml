@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/druid-1.1.0.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/mysql-connector-java-5.1.7-bin.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/spring-beans-3.2.4.RELEASE.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/spring-core-3.2.4.RELEASE.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/spring-jdbc-3.2.4.RELEASE.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Day0418Login/libs/spring-tx-3.2.4.RELEASE.jar" charset="GBK" />
+  </component>
+</project>
