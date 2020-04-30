@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*绑定单击事件，修改图片src属性*/
+        window.onload=function () {
+            var img=document.getElementById("checkCode");
+            var a=document.getElementById("change");
+            a.onclick=function () {
+                //加时间戳
+                var date=new Date().getMilliseconds();
+                img.src="/Day0421/checkCodeServlet?"+date;
+            }
+        }
+    </script>
+</head>
+<body>
+<img id="checkCode" src="/Day0421/checkCodeServlet" alt="">
+<a id="change" href="#">看不清换一张</a>
+</body>
+</html>
