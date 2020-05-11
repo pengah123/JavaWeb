@@ -112,7 +112,7 @@
     <script>
         window.onload = function () {
             document.getElementById("form").onsubmit = function () {
-                return checkUsername() && checkPassword()&&checkEmail()&&checkName()&&checkTel();
+                return checkUsername() && checkPassword() && checkEmail() && checkName() && checkTel();
 
             }
             document.getElementById("username").onblur = checkUsername;
@@ -148,7 +148,8 @@
                 s_password.className = "error";
             }
             return flag;
-        }        
+        }
+
         function checkEmail() {
             var email = document.getElementById("email").value;
             var reg_email = /^[a-zA-Z\d]+([-_\.][a-zA-Z\d]+)*@[a-zA-Z\d]+\.[a-zA-Z\d]{2,4}$/;
@@ -161,10 +162,11 @@
                 s_email.className = "error";
             }
             return flag;
-        }          
+        }
+
         function checkName() {
             var name = document.getElementById("name").value;
-            var reg_name =/^\w{2,5}$/;
+            var reg_name = /^\w{2,5}$/;
             var flag = reg_name.test(name);
             var s_name = document.getElementById("s_name");
             if (flag) {
@@ -174,7 +176,8 @@
                 s_name.className = "error";
             }
             return flag;
-        }        
+        }
+
         function checkTel() {
             var tel = document.getElementById("tel").value;
             var reg_tel = /^\d{11}$/;

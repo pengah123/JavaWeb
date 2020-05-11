@@ -9,6 +9,11 @@
       <module fileurl="file://$PROJECT_DIR$/Day0418Login/Day0418Login.iml" filepath="$PROJECT_DIR$/Day0418Login/Day0418Login.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day0421Response/Day0421Response.iml" filepath="$PROJECT_DIR$/Day0421Response/Day0421Response.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day0428/Day0428.iml" filepath="$PROJECT_DIR$/Day0428/Day0428.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0501/Day0501.iml" filepath="$PROJECT_DIR$/Day0501/Day0501.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0502MVC/Day0502MVC.iml" filepath="$PROJECT_DIR$/Day0502MVC/Day0502MVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0506Filter/Day0506Filter.iml" filepath="$PROJECT_DIR$/Day0506Filter/Day0506Filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0507JQuery/Day0507JQuery.iml" filepath="$PROJECT_DIR$/Day0507JQuery/Day0507JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0510JQuery/Day0510JQuery.iml" filepath="$PROJECT_DIR$/Day0510JQuery/Day0510JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
     </modules>
   </component>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-jQuery对象和JS对象的区别</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1"> div1……</div>
+<div id="div2"> div2……</div>
+
+<script>
+
+/*通过JS方式获取名称叫div的所有html元素*/
+let divs = document.getElementsByTagName("div");//可以作为数组使用
+
+/*通过JQuery方式获取名称叫div的所有html元素*/
+ let $divs = $("div");//可以作为数组使用
+
+//将divs中所有的div其标签体内容变为"aaa"
+for (var i=0;i<divs.length;i++){
+    // divs[i].innerHTML="aaa";
+    //js-->jq
+    $(divs[i]).html("ccc");
+}
+
+//使用JQuery将$divs中所有的div其标签体内容变为"bbb"
+// $divs.html("bbb");
+//jq-->js
+$divs[0].innerHTML="ddd";
+
+/* alert(divs);
+ alert($divs);*/
+</script>
+</body>
+</html>

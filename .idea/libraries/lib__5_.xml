@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib (5)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Day0510JQuery/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Day0510JQuery/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/Day0510JQuery/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Day0510JQuery/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
