@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/Day0506Filter/Day0506Filter.iml" filepath="$PROJECT_DIR$/Day0506Filter/Day0506Filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day0507JQuery/Day0507JQuery.iml" filepath="$PROJECT_DIR$/Day0507JQuery/Day0507JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day0510JQuery/Day0510JQuery.iml" filepath="$PROJECT_DIR$/Day0510JQuery/Day0510JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0512AJAX/Day0512AJAX.iml" filepath="$PROJECT_DIR$/Day0512AJAX/Day0512AJAX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day0513Redis/Day0513Redis.iml" filepath="$PROJECT_DIR$/Day0513Redis/Day0513Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
     </modules>
   </component>
